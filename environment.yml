@@ -1,0 +1,32 @@
+name: sprawlhub
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - dask
+  - dask-ml
+  - psycopg2
+  - sqlalchemy
+  - fastapi
+  - s3fs
+  - mimesis
+  - faker
+  - requests
+  - coverage
+  - pytest
+  - pytest-asyncio
+  - pytest-trio
+  - pytest-cov
+  - pytest-xdist
+  - trio
+  - httpx
+  - black
+  - isort
+  - flake8
+  - pylint
+  - ipython
+  - pre-commit
+  - pip
+  - pip:
+    - dask-sql
+    - fugue[sql,dask]
