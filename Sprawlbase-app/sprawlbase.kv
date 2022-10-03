@@ -1,0 +1,31 @@
+#:kivy 2.1.0
+
+BoxLayout:
+  name: "console"
+  orientation: "vertical"
+  FloatLayout:
+    size_hint_y: 5
+    Image:
+      id: user_icon
+      size_hint: (0.1, 0.1)
+      pos_hint: {'x': 0.4, 'y': 0.4}
+      allow_stretch: True
+      source: "sprawlbuck_icon.png"
+    Label:
+      id: amount_bucks_label
+      size_hint: (0.1, 0.1)
+      pos_hint: {'x': 0.5, 'y': 0.4}
+      text: "0.0"
+      amount_bucks: 0.0
+      on_amount_bucks: app.update_amount_bucks()
+    Label:
+      size_hint: (0.2, 0.2)
+      pos_hint: {'x': 0.0, 'y': 0.85}
+      text: "SPRAWLBASE"
+
+  Button:
+    id: earn_sprawlbucks_button
+    font_size: 30
+    text: "Tap to Earn Sprawlbucks!"
+    size_hint_y: 1
+    on_press: app.connect_to_scheduler()

@@ -1,0 +1,21 @@
+name: sprawlerapp
+channels:
+  - conda-forge
+dependencies:
+  - dask-core
+  - distributed
+  - Cython
+  - flake8
+  - black
+  - isort
+  - pylint
+  - pre-commit
+  - pycodestyle
+  - pydocstyle
+  - pylint
+  - ipython
+  - pip
+  - pip:
+      - kivy
+      - buildozer
+      - black[d]
